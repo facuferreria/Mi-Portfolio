@@ -1,0 +1,49 @@
+@import '../../styles/config.scss';
+
+.nav{
+    background-color: $primary-color;
+    min-width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0 15px;
+    margin-bottom: 120px;
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    &_options{
+        margin-left: 20px;
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    &_link{
+        opacity: 0;
+
+        &_animation{
+            &:nth-child(1){
+                @include animation(pop-animation, 1s , 1.5s); 
+            }
+            &:nth-child(2){
+                @include animation(pop-animation, 1s , 2s);
+            }
+            &:nth-child(3){
+                @include animation(pop-animation, 1s , 2.5s);
+            }
+            &:nth-child(4){
+                @include animation(pop-animation, 1s , 3s);
+            }
+        }
+    }
+
+}
+
+.logo{
+    width: 120px;
+    height: 60px;
+    @include animation(slideInLeft, 1s , .5s);
+}

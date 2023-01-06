@@ -1,0 +1,14 @@
+.intro_text{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.proyect_container{
+    width: 100%;
+    margin: 80px 0;
+    display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+    place-items: center;
+}

@@ -1,0 +1,52 @@
+@import '../../styles/config.scss';
+
+.subcontainer{
+    width: 90%;
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.text_container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img{
+    width: 350px;
+    height: 350px;
+    margin: 0 0 0 auto;
+    border-radius: 5px;
+    box-shadow: rgb(2 12 27 / 70%) 0px 10px 30px -10px;
+}
+
+.link{
+    color: $third-color;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.strong_words{
+    font-weight: 700;
+}
+
+.list{
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+    padding: 0;
+    font-size: .8rem;
+
+    &_item{
+        font-size: .7rem;
+        list-style: none;
+        padding: 6px;
+        border-radius: 5px;
+        color: $primary-color;
+        text-align: center;
+        background-color: $third-color;
+    }
+}
+
