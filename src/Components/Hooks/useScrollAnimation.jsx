@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, createContext, useState, useEffect } from 'react';
 
-function ScrollAnimation({ threshold, children, animationClass, actualClass }) {
+const ScrollAnimationContext = createContext();
+
+function ScrollAnimationProvider({ children, threshold }) {
   const [isAnimating, setIsAnimating] = useState(false);
   const [animationTriggered, setAnimationTriggered] = useState(false);
 
@@ -17,10 +19,14 @@ function ScrollAnimation({ threshold, children, animationClass, actualClass }) {
   }, []);
 
   return (
-    <div className={isAnimating ? animationClass : actualClass}>
-      {isAnimating ? children : null}
-    </div>
+    <ScrollAnimationContext.Provider value={{ isAnimating, threshold }}>
+      {children}
+    </ScrollAnimationContext.Provider>
   );
 }
 
-export default ScrollAnimation;
+function useScrollAnimation() {
+  return useContext(ScrollAnimationContext);
+}
+
+export { ScrollAnimationProvider, useScrollAnimation };

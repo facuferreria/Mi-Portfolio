@@ -4,6 +4,8 @@
     font-size: 3.1rem;
     width: 100%;
     margin: 0 auto;
+    opacity: 0;
+    @include animation(pop-animation, 1s , 1.5s); 
 }
 
 .text{
@@ -20,13 +22,24 @@
     margin-top: 30px;
     font-size: 0.5em;
     border: none;
-    padding: 10px;
+    padding: 12px 50px 12px 20px;
     background-color: #242424;
     color: #f4f4f4;
     transition: 0.5s;
+    position: relative;
 
     &:hover{
         transition: 0.5s;
-        background-color: $third-color
+        background-color: $third-color;
+        .icon{
+            transform: rotate(90deg);
+        }
     }
+}
+
+.icon{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    transition: all ease-in-out 0.3s;
 }

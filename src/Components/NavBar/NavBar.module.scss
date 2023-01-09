@@ -23,20 +23,18 @@
 
     &_link{
         opacity: 0;
-
-        &_animation{
-            &:nth-child(1){
-                @include animation(pop-animation, 1s , 1.5s); 
-            }
-            &:nth-child(2){
-                @include animation(pop-animation, 1s , 2s);
-            }
-            &:nth-child(3){
-                @include animation(pop-animation, 1s , 2.5s);
-            }
-            &:nth-child(4){
-                @include animation(pop-animation, 1s , 3s);
-            }
+        
+        &:nth-child(1){
+            @include animation(pop-animation, .5s , 1.5s); 
+        }
+        &:nth-child(2){
+            @include animation(pop-animation, .5s , 2s);
+        }
+        &:nth-child(3){
+            @include animation(pop-animation, .5s , 2.5s);
+        }
+        &:nth-child(4){
+            @include animation(pop-animation, .5s , 3s);
         }
     }
 
@@ -45,5 +43,6 @@
 .logo{
     width: 120px;
     height: 60px;
+    opacity: 0;
     @include animation(slideInLeft, 1s , .5s);
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Presentation.module.scss'
 import Typewriter from 'typewriter-effect';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Presentation() {
     return (
@@ -13,6 +14,7 @@ function Presentation() {
                         options={{ loop: true }}
                         onInit={(typewriter) => {
                             typewriter
+                            .pauseFor(1500)
                             .changeDelay(40)
                             .changeDeleteSpeed(30)
                             .typeString('<strong>Desarrollemos esa pagina ideal que imaginas</strong>')
@@ -27,7 +29,10 @@ function Presentation() {
                             .start();
                         }}
                     />
-                    <button className={styles.button} >Ve mis proyectos</button>
+                    <button className={styles.button} >
+                        Ve mis proyectos
+                        <FontAwesomeIcon className={styles.icon} icon="fa-solid fa-arrow-right" />
+                    </button>
                 </div>
             </div>
         </div>

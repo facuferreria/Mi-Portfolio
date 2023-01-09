@@ -3,16 +3,18 @@ import styles from './ProyectCard.module.scss'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Slider from '../Slider/Slider';
+import { useScrollAnimation } from '../Hooks/useScrollAnimation';
 
 function ProyectCard({proyectData}) {
 
     const [show, setShow] = useState(false);
+    const { isAnimating } = useScrollAnimation();
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
     return (
-        <div className={styles.card_container} >
+        <div className={isAnimating ? `${styles.card_container} ${styles.animation_card}` : styles.card_container} >
             <div className={styles.card_img}></div>
             <div className={styles.card_text}>
                 <h3 className={styles.card_title}>{proyectData.title}</h3>

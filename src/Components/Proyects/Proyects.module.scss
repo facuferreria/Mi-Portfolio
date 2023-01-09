@@ -1,6 +1,9 @@
+@import '../../styles/config.scss';
+
 .intro_text{
     text-align: center;
     font-size: 1.2rem;
+    opacity: 0;
 }
 
 .proyect_container{
@@ -11,4 +14,8 @@
 	grid-column-gap: 20px;
 	grid-row-gap: 20px;
     place-items: center;
+}
+
+.animation{
+    @include animation(pop-animation, .5s , 1s);
 }

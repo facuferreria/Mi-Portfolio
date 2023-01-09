@@ -13,6 +13,7 @@
 .text{
     text-align: center;
     margin-bottom: 40px;
+    opacity: 0;
 }
 
 .button{
@@ -24,6 +25,7 @@
     color: $primary-color;
     margin: 0 auto;
     transition: all 0.15s ease-in-out;
+    opacity: 0;
 
     &:hover{
         background-color: $third-color;
@@ -44,6 +46,7 @@
     padding: 10px;
     border-radius: 50%;
     transition: all 0.15s ease-in-out;
+    opacity: 0;
     &:hover{
         color: $primary-color;
         background-color: $third-color; 
@@ -51,7 +54,43 @@
 }
 
 .separation_line{
-    width: 80%;
-    height: 2px;
-    background-color: #f5f5f5;
+    width: 0;
+    height: 0;
+    background-color: #f6f6f6;
+}
+
+.animation{
+    &_text{
+        @include animation(pop-animation, .75s , 1s);
+    }
+
+    &_button{
+        @include animation(pop-animation, .75s , 1.5s);
+    }
+
+    &_line{
+        @include animation(line-animation, 2s , 1s);
+    }
+
+    &_icon{
+        &:nth-child(1){
+            @include animation(pop-animation, 1s , 3s); 
+        }
+        
+        &:nth-child(2){
+            @include animation(pop-animation, 1s , 3.2s);
+        }
+
+        &:nth-child(3){
+            @include animation(pop-animation, 1s , 3.4s);
+        }
+
+        &:nth-child(4){
+            @include animation(pop-animation, 1s , 3.6s);
+        }
+
+        &:nth-child(5){
+            @include animation(pop-animation, 1s , 3.8s); 
+        }
+    }
 }
