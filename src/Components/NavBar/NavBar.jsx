@@ -26,10 +26,10 @@ function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className={`${styles.nav_options} flex-grow-1 pe-3 `}>
-                  <Nav.Link className={styles.nav_link} href="#home">INICIO</Nav.Link>
-                  <Nav.Link className={styles.nav_link} href="#about">SOBRE MI</Nav.Link>
-                  <Nav.Link className={styles.nav_link} href="#proyects">PROYECTOS</Nav.Link>
-                  <Nav.Link className={styles.nav_link} href="#contact">CONTACTO</Nav.Link>
+                  <Nav.Link className={styles.nav_link} href="/#home">INICIO</Nav.Link>
+                  <Nav.Link className={styles.nav_link} href="/#about">SOBRE MI</Nav.Link>
+                  <Nav.Link className={styles.nav_link} href="/#proyects">PROYECTOS</Nav.Link>
+                  <Nav.Link className={styles.nav_link} href="/#contact">CONTACTO</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

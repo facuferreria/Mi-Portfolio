@@ -31,6 +31,54 @@
             z-index: 2;
         }
     }
+
+    @include breakpoint(mobile) {
+        height: 270px;
+
+        .card_img{
+            background: #f4f4f4;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .card_text{
+            opacity: 100%;
+            transition: all 0.3s ease-in-out;
+            position: absolute;
+            top: 25%;
+            z-index: 2;
+        }
+
+        .card_button{
+            opacity: 100%;
+            transition: all 0.3s ease-in-out;
+            position: absolute;
+            top: 70%;
+            z-index: 2;
+        }
+    }
+ 
+     @include breakpoint(tablet) {
+        .card_img{
+            background: #f4f4f4;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .card_text{
+            opacity: 100%;
+            transition: all 0.3s ease-in-out;
+            position: absolute;
+            top: 25%;
+            z-index: 2;
+        }
+
+        .card_button{
+            opacity: 100%;
+            transition: all 0.3s ease-in-out;
+            position: absolute;
+            top: 70%;
+            z-index: 2;
+        }
+    }
 }
 
 .card_img{
@@ -76,6 +124,16 @@
     background-color: $secondary-color;
     color: $primary-color;
     margin: 0 auto;
+
+    @include breakpoint(mobile) {
+        color: $primary-color;
+        background-color: $third-color;
+    }
+
+    @include breakpoint(tablet) {
+        color: $primary-color;
+        background-color: $third-color;
+    }
 }
 
 .modal_subtitle{
@@ -84,6 +142,11 @@
 
 .container_links{
     margin: 40px 0;
+
+    @include breakpoint(mobile) {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 .modalLink{
@@ -95,6 +158,12 @@
     transition: all 0.3s ease-in-out;
 
     &:hover{
+        color: $primary-color;
+        background-color: $third-color;
+    }
+
+    @include breakpoint(mobile) {
+        margin: 20px 0;
         color: $primary-color;
         background-color: $third-color;
     }

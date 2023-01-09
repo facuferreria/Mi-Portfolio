@@ -55,7 +55,7 @@ $desktop: 1200px;
 
 @include keyframes(slideToTop){
     0%   { 
-        transform: translateY(100px);
+        transform: translateY(50px);
         opacity: 0; 
     }
     100% { 
@@ -81,9 +81,6 @@ $desktop: 1200px;
   }
   @else if $media == tablet {
     @media (min-width: $tabletPortrait) and (max-width: $tabletLandscape) { @content; }
-  }
-  @else if $media == smallScreen {
-    @media (max-width: $desktop) { @content; }
   }
   @else if $media == desktop {
     @media (min-width: $desktop) { @content; }

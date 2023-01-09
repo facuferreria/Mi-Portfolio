@@ -1,8 +1,25 @@
+@import './styles/config.scss';
+
 :root {
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+
+  @include breakpoint(mobile) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  @include breakpoint(tablet) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @include breakpoint(desktop) {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 
 *{

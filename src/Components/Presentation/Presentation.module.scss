@@ -28,13 +28,26 @@
     transition: 0.5s;
     position: relative;
 
-    &:hover{
-        transition: 0.5s;
+    @include breakpoint(mobile) {
         background-color: $third-color;
-        .icon{
-            transform: rotate(90deg);
+        color: $primary-color;
+    }
+
+    @include breakpoint(tablet) {
+        background-color: $third-color;
+        color: $primary-color;
+    }
+
+    @include breakpoint(desktop){
+        &:hover{
+            transition: 0.5s;
+            background-color: $third-color;
+            .icon{
+                transform: rotate(90deg);
+            }
         }
     }
+    
 }
 
 .icon{
