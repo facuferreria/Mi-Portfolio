@@ -167,6 +167,11 @@
         color: $primary-color;
         background-color: $third-color;
     }
+
+    @include breakpoint(tablet) {
+        color: $primary-color;
+        background-color: $third-color;
+    }
 }
 
 .animation_card{
