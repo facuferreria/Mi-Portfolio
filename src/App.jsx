@@ -10,6 +10,7 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import Contact from './Components/Contact/Contact';
 import { ScrollAnimationProvider } from './Components/Hooks/useScrollAnimation';
+import Footer from './Components/Footer/Footer';
 
 library.add(fas, far, fab);
 
@@ -19,7 +20,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Presentation />
-      <ScrollAnimationProvider threshold={800}>
+      <ScrollAnimationProvider threshold={700}>
         <About />
       </ScrollAnimationProvider>
       <ScrollAnimationProvider threshold={1750}>
@@ -27,7 +28,9 @@ function App() {
       </ScrollAnimationProvider>
       <ScrollAnimationProvider threshold={3050}>
         <Contact />
+        <Footer />
       </ScrollAnimationProvider>
+      
     </div>
   )
 }

@@ -7,7 +7,7 @@ function Contact() {
     const { isAnimating } = useScrollAnimation();
 
     return (
-        <div className= "container" id="contact">
+        <div className={styles.container} id="contact">
             <h2 className= {isAnimating ? "header toLeft" : "header"}>CONTACTO</h2>
             <div className= {isAnimating ? "header_bar toLeftBar" : "header_bar"}></div>
             <div className={styles.subcontainer}>

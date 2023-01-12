@@ -1,5 +1,10 @@
 @import '../../../src/styles/config.scss';
 
+.container{
+    @extend .container;
+    margin: 100px auto;
+}
+
 .subcontainer{
     width: 100%;
     display: flex;

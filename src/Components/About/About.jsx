@@ -40,10 +40,10 @@ function About() {
                     </div>
                     <p>
                         Si estas buscando tener presencia en internet con tu propia web o eres parte de una empresa que esta en busca
-                        de desarrollladores capacitados, <a href="#" className={styles.link}>hablame y trabajemos juntos.</a>
+                        de desarrollladores capacitados, <a href="/#contact" className={styles.link}>hablame y trabajemos juntos.</a>
                     </p>
                 </div>
-                <img src={rectangular_photo} alt="me" className={isAnimating ? `${styles.img} ${styles.animation_img}` : styles.img} />
+                <img src={rectangular_photo} alt="Facundo Ferreria" className={isAnimating ? `${styles.img} ${styles.animation_img}` : styles.img} />
             </div>
         </div>
     )
