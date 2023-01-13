@@ -191,18 +191,18 @@
 
 .animation_card{
     &:nth-child(1){
-        @include animation(slideToTop, .75s , 1s); 
+        @include animation(slideToTop, .5s , 1s); 
     }
     
     &:nth-child(2){
-        @include animation(slideToTop, .75s , 1.5s);
+        @include animation(slideToTop, .5s , 1.5s);
     }
 
     &:nth-child(3){
-        @include animation(slideToTop, .75s , 2s);
+        @include animation(slideToTop, .5s , 2s);
     }
 
     &:nth-child(4){
-        @include animation(slideToTop, .75s , 2.5s);
+        @include animation(slideToTop, .5s , 2.5s);
     }
 }

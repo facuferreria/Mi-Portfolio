@@ -20,13 +20,13 @@ function App() {
     <div className="App">
       <NavBar />
       <Presentation />
-      <ScrollAnimationProvider threshold={700}>
+      <ScrollAnimationProvider threshold={500}>
         <About />
       </ScrollAnimationProvider>
-      <ScrollAnimationProvider threshold={1750}>
+      <ScrollAnimationProvider threshold={1050}>
         <Proyects />
       </ScrollAnimationProvider>
-      <ScrollAnimationProvider threshold={3050}>
+      <ScrollAnimationProvider threshold={1600}>
         <Contact />
         <Footer />
       </ScrollAnimationProvider>

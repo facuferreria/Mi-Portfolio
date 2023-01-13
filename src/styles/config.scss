@@ -91,7 +91,7 @@ $desktop: 1200px;
 
 .container{
     width: 90%;
-    margin: 100px auto 300px auto;
+    margin: 100px auto 40px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,21 +113,21 @@ $desktop: 1200px;
 }
 
 .toLeft{
-    @include animation(slideInLeft, .5s , 0s); 
+    @include animation(slideInLeft, .4s , 0s); 
 }
 
 .toRight{
-    @include animation(slideInRight, .5s , 0s); 
+    @include animation(slideInRight, .4s , 0s); 
 }
 
 .toLeftBar{
-    @include animation(slideInLeft, .75s , .5s); 
+    @include animation(slideInLeft, .6s , .5s); 
 }
 
 .toRightBar{
-    @include animation(slideInRight, .75s , .5s); 
+    @include animation(slideInRight, .6s , .5s); 
 }
 
 .pop-animation{
-    @include animation(pop-animation, .75s , 1s); 
+    @include animation(pop-animation, .7s , 1s); 
 }

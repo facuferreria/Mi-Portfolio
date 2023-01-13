@@ -48,7 +48,7 @@
     
     @include breakpoint(desktop) {
         opacity: 0;
-        @include animation(slideInLeft, 1s , .5s);
+        @include animation(slideInLeft, .75s , .5s);
     }
     
 }

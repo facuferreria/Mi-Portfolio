@@ -95,28 +95,28 @@
     }
 
     &_line{
-        @include animation(line-animation, 2s , 1s);
+        @include animation(line-animation, 1s , 1s);
     }
 
     &_icon{
         &:nth-child(1){
-            @include animation(pop-animation, 1s , 3s); 
+            @include animation(pop-animation, .75s , 3s); 
         }
         
         &:nth-child(2){
-            @include animation(pop-animation, 1s , 3.2s);
+            @include animation(pop-animation, .75s , 3.2s);
         }
 
         &:nth-child(3){
-            @include animation(pop-animation, 1s , 3.4s);
+            @include animation(pop-animation, .75s , 3.4s);
         }
 
         &:nth-child(4){
-            @include animation(pop-animation, 1s , 3.6s);
+            @include animation(pop-animation, .75s , 3.6s);
         }
 
         &:nth-child(5){
-            @include animation(pop-animation, 1s , 3.8s); 
+            @include animation(pop-animation, .75s , 3.8s); 
         }
     }
 }
