@@ -3,12 +3,11 @@
 :root {
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
 
   @include breakpoint(mobile) {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 10px;
   }
 
   @include breakpoint(tablet) {

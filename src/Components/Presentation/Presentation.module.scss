@@ -6,11 +6,28 @@
     margin: 0 auto;
     opacity: 0;
     @include animation(pop-animation, .75s , 3s); 
+
+    @include breakpoint(mobile) {
+        text-align: center;
+        font-size: 1.35rem;
+    }
+
+    @include breakpoint(tablet) {
+        font-size: 2.5rem;
+    }
 }
 
 .text{
     margin: 0;
     line-height: 80px;
+
+    @include breakpoint(mobile) {
+        line-height: 30px;
+    }
+}
+
+.text_container{
+    margin-bottom: 50px;
 }
 
 .blue_text{
@@ -20,10 +37,9 @@
 
 .button{
     text-decoration: none;
-    margin-top: 30px;
     font-size: 0.5em;
     border: none;
-    padding: 12px 50px 12px 20px;
+    padding: 15px 50px 15px 20px;
     background-color: #242424;
     color: $primary-color;
     transition: 0.5s;
@@ -32,11 +48,20 @@
     @include breakpoint(mobile) {
         background-color: $third-color;
         color: $primary-color;
+        font-size: 0.9em;
+        
+        .button:hover{
+            color: $primary-color;
+        }
     }
 
     @include breakpoint(tablet) {
         background-color: $third-color;
         color: $primary-color;
+
+        .button:hover{
+            color: $primary-color;
+        }
     }
 
     @include breakpoint(desktop){
@@ -54,7 +79,11 @@
 
 .icon{
     position: absolute;
-    top: 20px;
+    top: 25px;
     right: 15px;
     transition: all ease-in-out 0.3s;
+
+    @include breakpoint(mobile) {
+        top: 20px;
+    }
 }

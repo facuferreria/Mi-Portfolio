@@ -19,8 +19,8 @@ function About() {
                         <span className={styles.strong_words}> Frontend developer.</span>
                     </p>
                     <p>
-                        Recientemente me egrese de la escuela tecnica N°28 como tecnico electronico pero mi pasion me derivo mas por 
-                        el lado de la programacion. Aspiro a estudiar ingenieria informatica en la UBA y a su vez  
+                        Recientemente me egrese de la escuela técnica N°28 como técnico electrónico pero mi pasión me derivo más por el lado de la programación. 
+                        Aspiro a estudiar ingeniería informática en la UBA y a su vez  
                         <span className={styles.strong_words}> seguir capacitandome 
                         en el rubro para poder convertirme en un Desarrollador Fullstack.</span>
                     </p>

@@ -11,10 +11,9 @@ function Contact() {
             <h2 className= {isAnimating ? "header toLeft" : "header"}>CONTACTO</h2>
             <div className= {isAnimating ? "header_bar toLeftBar" : "header_bar"}></div>
             <div className={styles.subcontainer}>
-                <h4 className={isAnimating ? `${styles.text} ${styles.animation_text}` : styles.text}>
-                    Estas buscando gente capacitada en el rubro, tenes una idea en la que quieras trabajar o simplemente tenes alguna duda,
-                    hablemos y coordinemos una reunion.          
-                </h4>
+                <p className={isAnimating ? `${styles.text} ${styles.animation_text}` : styles.text}>
+                    Estas buscando gente capacitada en el rubro, tienes una idea en la que quieras trabajar o simplemente tienes alguna duda, hablemos y coordinemos una reunión.        
+                </p>
                 <a href="mailto:ferreriafacundo@gmail.com" className={isAnimating ? `${styles.button} ${styles.animation_button}` : styles.button}>Trabajemos juntos</a>
             </div>
             <div className={isAnimating ? `${styles.separation_line} ${styles.animation_line}` : styles.separation_line}></div>
