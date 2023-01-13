@@ -24,7 +24,7 @@ export const proyectsData = [
         info: "Mi primer portfolio como Frontend Developer profesional donde utilice las tecnologias de siempre pero tambien tuve la oportunidad de utilizar y aprender nuevos conceptos como lo es CSS Modules. La pagina ya esta en internet y se puede ver desde todos los dispositivos",
         technologies: ["HTML", "CSS", "Javascript", "Sass", "CSS Modules", "ReactJS"],
         gitLink: "https://github.com/facuferreria/Mi-Portfolio",
-        website: "https://facundoferreria.netlify.app/"
+        website: "https://facundoferreria.vercel.app/"
     }, 
     {
         title: "Ferretify",
