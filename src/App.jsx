@@ -20,13 +20,13 @@ function App() {
     <div className="App">
       <NavBar />
       <Presentation />
-      <ScrollAnimationProvider threshold={500}>
+      <ScrollAnimationProvider threshold={window.screen.width <= 768 ? 325 : 400}>
         <About />
       </ScrollAnimationProvider>
       <ScrollAnimationProvider threshold={1050}>
         <Proyects />
       </ScrollAnimationProvider>
-      <ScrollAnimationProvider threshold={1600}>
+      <ScrollAnimationProvider threshold={1700}>
         <Contact />
         <Footer />
       </ScrollAnimationProvider>
